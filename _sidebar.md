@@ -1,0 +1,9 @@
+* 三校区五校园
+    * [广州校区](member/teacher.md)
+        * [南校园](member/teacher/xujr.md)
+        * [东校园](member/teacher/zhangy.md)
+        * [北校园](member/teacher/liusw.md)
+    * [珠海校区](member/student)
+    * [深圳校区](member/student)
+* 赛事记录 
+    * [2003](./lab.md)
