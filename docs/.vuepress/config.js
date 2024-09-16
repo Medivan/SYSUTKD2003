@@ -9,6 +9,7 @@ export default defineUserConfig({
     title: '中山大学跆拳道协会/示范团',
     description: '中山大学跆拳道协会/示范团',
     theme: defaultTheme({
+        contributors: false,
         logo: '/images/logo-black.png',
         logoDark: '/images/logo-white.png',
         // 默认主题配置
@@ -82,6 +83,5 @@ export default defineUserConfig({
             },
         ],
         sidebarDepth: 3,
-
     })
 })
