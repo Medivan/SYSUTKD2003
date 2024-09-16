@@ -5,11 +5,12 @@ import { defineUserConfig } from 'vuepress'
 export default defineUserConfig({
     base: "sysutkd2003",
     bundler: viteBundler(),
-    theme: defaultTheme(),
     lang: 'zh-CN',
     title: '中山大学跆拳道协会/示范团',
     description: '中山大学跆拳道协会/示范团',
     theme: defaultTheme({
+        logo: '/images/logo-black.png',
+        logoDark: '/images/logo-white.png',
         // 默认主题配置
         navbar: [
             {
