@@ -5,8 +5,14 @@ import { defineUserConfig } from 'vuepress'
 export default defineUserConfig({
     bundler: viteBundler(),
     lang: 'zh-CN',
-    title: '中山大学跆拳道协会/示范团',
-    description: '中山大学跆拳道协会/示范团',
+    title: '中山大学跆拳道协会(示范团)',
+    description: '中山大学跆拳道协会(示范团)',
+    head: [
+        // 设置 favor.ico，.vuepress/public 下
+        [
+            'link', { rel: 'icon', href: '/favicon.ico' }
+        ]
+    ],
     theme: defaultTheme({
         contributors: false,
         logo: '/images/logo-black.png',
