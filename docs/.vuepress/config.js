@@ -3,16 +3,21 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 
 export default defineUserConfig({
-    base: "sysutkd2003",
     bundler: viteBundler(),
     lang: 'zh-CN',
-    title: '中山大学跆拳道协会/示范团',
-    description: '中山大学跆拳道协会/示范团',
+    title: '中山大学跆拳道协会（示范团）',
+    description: '中山大学跆拳道协会（示范团）',
+    head: [
+        // 设置 favor.ico，.vuepress/public 下
+        [
+            'link', { rel: 'icon', href: '/images/logo-cubic.webp' }
+        ]
+    ],
+    searchMaxSuggestions: 10,
     theme: defaultTheme({
         contributors: false,
         logo: '/images/logo-black.png',
         logoDark: '/images/logo-white.png',
-        // 默认主题配置
         navbar: [
             {
                 text: '首页',
@@ -20,12 +25,16 @@ export default defineUserConfig({
             },
         ],
         sidebar: [
-            // SidebarItem
             {
                 text: '协会历史',
                 collapsible: true,
                 prefix: '/history/',
                 children: [
+                    {
+                        text: '创办历史',
+                        link: 'founding.md',
+                        children: [],
+                    },
                     {
                         text: '技术顾问',
                         link: 'instructor.md',
@@ -51,7 +60,6 @@ export default defineUserConfig({
             {
                 text: '三校区五校园',
                 collapsible: true,
-                // 前缀可以是相对路径，等同于 `prefix: /reference/bundler/`
                 prefix: 'sysu35/',
                 children: [
                     {
@@ -82,6 +90,6 @@ export default defineUserConfig({
                 ],
             },
         ],
-        sidebarDepth: 3,
+        
     })
 })
