@@ -3,7 +3,6 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 
 export default defineUserConfig({
-    base: "sysutkd2003",
     bundler: viteBundler(),
     lang: 'zh-CN',
     title: '中山大学跆拳道协会/示范团',
